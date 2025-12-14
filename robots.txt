@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+# Приоритетные страницы
+Allow: /index.html
+Allow: /ventilyaciya.html
+Allow: /kondicionirovanie.html
+Allow: /avtomatizaciya.html
+Allow: /almaznoe-burenie.html
+Allow: /izgotovlenie-vozduhovodov.html
+Allow: /kontakty.html
+
+# Блокируем служебные директории
+Disallow: /api/
+Disallow: /.git/
+Disallow: /node_modules/
+
+# Sitemap
+Sitemap: https://мдн-инжиниринг.рф/sitemap.xml

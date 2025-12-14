@@ -1,0 +1,77 @@
+/* Print Styles */
+@media print {
+    /* Скрыть элементы, не нужные при печати */
+    header,
+    footer,
+    .messenger-btn,
+    .messengers,
+    .btn,
+    button,
+    .modal,
+    .notification,
+    .mobile-menu-toggle,
+    .back-to-top,
+    nav {
+        display: none !important;
+    }
+
+    /* Оптимизация для печати */
+    * {
+        background: white !important;
+        color: black !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    body {
+        margin: 0;
+        padding: 20px;
+        font-size: 12pt;
+        line-height: 1.5;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        page-break-after: avoid;
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+        page-break-inside: avoid;
+    }
+
+    p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    /* Показать URL ссылок */
+    a[href]:after {
+        content: " (" attr(href) ")";
+        font-size: 0.8em;
+    }
+
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    /* Убрать разрывы страниц внутри элементов */
+    .card,
+    .service-card,
+    .faq-item {
+        page-break-inside: avoid;
+    }
+
+    /* Контакты */
+    .contacts-container {
+        display: block !important;
+    }
+
+    .contact-card {
+        border: 1px solid #ccc !important;
+        padding: 10px;
+        margin-bottom: 20px;
+        page-break-inside: avoid;
+    }
+}

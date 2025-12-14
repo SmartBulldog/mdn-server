@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - МДН Инжиниринг</title>
+    <meta name="description" content="Контакты компании МДН Инжиниринг в Барнауле и Новосибирске. Адреса, телефоны, email для связи.">
+    <meta name="keywords" content="контакты МДН Инжиниринг, адрес, телефон, email, Барнаул, Новосибирск">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://мдн-инжиниринг.рф/kontakty.html">
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#e85124">
+
+    <!-- Security -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://мдн-инжиниринг.рф/kontakty.html">
+    <meta property="og:title" content="Контакты - МДН Инжиниринг">
+    <meta property="og:description" content="Контакты компании МДН Инжиниринг в Барнауле и Новосибирске. Адреса, телефоны, email для связи.">
+    <meta property="og:image" content="https://мдн-инжиниринг.рф/images/logo.png">
+    <meta property="og:locale" content="ru_RU">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://мдн-инжиниринг.рф/kontakty.html">
+    <meta property="twitter:title" content="Контакты - МДН Инжиниринг">
+    <meta property="twitter:description" content="Контакты компании МДН Инжиниринг в Барнауле и Новосибирске. Адреса, телефоны, email для связи.">
+    <meta property="twitter:image" content="https://мдн-инжиниринг.рф/images/logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="МДН Инжиниринг">
+                    <span class="logo-text">МДН Инжиниринг</span>
+                </a>
+                <nav>
+                    <ul class="nav">
+                        <!-- <li><a href="index.html">Главная</a></li> -->
+                        <li><a href="kondicionirovanie.html">Кондиционирование</a></li>
+                        <li><a href="ventilyaciya.html">Вентиляция</a></li>
+                        <li><a href="avtomatizaciya.html">Автоматизация</a></li>
+                        <li><a href="almaznoe-burenie.html">Алмазное бурение</a></li>
+                        <li><a href="izgotovlenie-vozduhovodov.html">Воздуховоды</a></li>
+                    </ul>
+                    <div class="mobile-menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+   <section class="hero-glassmorphism" id="contacts-hero" itemscope itemtype="https://schema.org/Service">
+  <div class="hero-glassmorphism-bg"
+       style="background-image:url('images/kontakty-hero.jpg');
+              background-size:cover; background-position:center; background-repeat:no-repeat;">
+  </div>
+
+  <!-- обёртка, в ней делаем сдвиг -->
+  <div class="card-shift">
+    <!-- эта карточка только крутится -->
+    <div class="glass-container" id="glass-effect-card">
+      <h1 itemprop="name">Контакты</h1>
+      <p itemprop="description">
+        Свяжитесь с нами любым удобным способом. Наши специалисты готовы ответить на ваши вопросы и предложить оптимальные решения для ваших задач.
+      </p>
+      <a href="tel:+79130039534" class="cta-button" onclick="if (!isMobileDevice()) { openCallbackModal(); return false; }">Позвонить</a>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Обёртка нужна только как "контейнер-сдвиг" */
+  #contacts-hero .card-shift {
+    position: relative;              /* на всякий случай для стэкинга */
+    display: flex;                    /* не ломаем центровку карточки */
+    justify-content: center;          /* карточка остаётся по центру внутри */
+  }
+
+  /* Десктоп: визуально уводим центр вправо за счёт левого внутреннего поля */
+  @media (min-width: 992px) {
+    #contacts-hero .card-shift {
+      padding-left: 50%;              /* ← сдвиг ~на 20% ширины секции */
+    }
+  }
+
+  /* Мобилка: фон по левой части, сдвиг обнуляем */
+  @media (max-width: 767px) {
+    #contacts-hero .hero-glassmorphism-bg {
+      background-position: left center !important;
+    }
+    #contacts-hero .card-shift {
+      padding-left: 0 !important;
+    }
+  }
+</style>
+
+
+<!-- Локальные правки только для этого блока -->
+<style>
+  /* десктоп: смещаем карточку вправо ~на 20% её ширины */
+  @media (min-width: 992px) {
+    #contacts-hero #glass-effect-card {
+      transform: translateX(20%);
+    }
+  }
+  /* мобильные: фон по левой части, карточка без смещения */
+  @media (max-width: 767px) {
+    #contacts-hero .hero-glassmorphism-bg {
+      background-position: left center !important;
+    }
+    #contacts-hero #glass-effect-card {
+      transform: none !important;
+    }
+  }
+</style>
+
+
+    <!-- Контактная информация -->
+    <section class="section section-bg-light">
+        <div class="container">
+            <h2 class="text-center">Наши офисы</h2>
+            <div class="contact-info">
+                <div class="contact-card">
+                    <h3>Барнаул</h3>
+                    <p><strong>Юридический/фактический адрес:</strong></p>
+                    <p>656006, Россия, Алтайский край,<br>г. Барнаул, ул. Взлетная 2К, помещ. Н1</p>
+                    
+                    <p style="margin-top: 20px;"><strong>Реквизиты:</strong></p>
+                    <p>ООО "МДН Инжиниринг"</p>
+                    <p>ИНН: 2222904674</p>
+                    <p>КПП: 222201001</p>
+                    <p>ОГРН: 1232200018522</p>
+                    
+                    <p style="margin-top: 20px;"><strong>Банковские реквизиты:</strong></p>
+                    <p>ФИЛИАЛ "НОВОСИБИРСКИЙ" АО "АЛЬФА-БАНК"</p>
+                    <p>Р/с 40702810623100008363</p>
+                    <p>К/с 30101810600000000774</p>
+                    <p>БИК 045004774</p>
+                    
+                    <img src="images/map-barnaul.jpg" alt="Карта Барнаула" style="width: 100%; height: 300px; object-fit: cover; border-radius: 10px; margin-top: 20px;">
+                </div>
+                <div class="contact-card">
+                    <h3>Новосибирск</h3>
+                    <p><strong>Фактический адрес:</strong></p>
+                    <p>630123, Новосибирская обл.,<br>г. Новосибирск, ул. Аэропорт 2Б, офис 46</p>
+                    
+                    <p style="margin-top: 20px;"><strong>Телефоны:</strong></p>
+                    <p><a href="tel:+79130039534">+7 (913) 003-95-34</a> - Общий</p>
+                    <p><a href="tel:+79039910666">+7 (903) 991-06-66</a> - Бухгалтерия</p>
+                    
+                    <p style="margin-top: 20px;"><strong>Руководство:</strong></p>
+                    <p><strong>Генеральный директор:</strong></p>
+                    <p>Медведев Дмитрий Николаевич</p>
+                    <p><a href="tel:+79139573733">+7 (913) 957-37-33</a></p>
+                    <p><a href="mailto:gendirector@mdn-eng.ru">gendirector@mdn-eng.ru</a></p>
+                    
+                    <p style="margin-top: 15px;"><strong>Главный инженер:</strong></p>
+                    <p>Кеннер Артём Павлович</p>
+                    <p><a href="tel:+79133820775">+7 (913) 382-07-75</a></p>
+                    
+                    <p style="margin-top: 20px;"><strong>Email:</strong></p>
+                    <p><a href="mailto:mdnengineering@mail.ru">mdnengineering@mail.ru</a> - Общий</p>
+                    <p><a href="mailto:info@mdn-eng.ru">info@mdn-eng.ru</a> - Информация</p>
+                    <p><a href="mailto:sales@mdn-eng.ru">sales@mdn-eng.ru</a> - Отдел продаж</p>
+                    <p><a href="mailto:hr@mdn-eng.ru">hr@mdn-eng.ru</a> - Кадры</p>
+                    <p><a href="mailto:support@mdn-eng.ru">support@mdn-eng.ru</a> - Техподдержка</p>
+                    
+                    <img src="images/map-novosibirsk.jpg" alt="Карта Новосибирска" style="width: 100%; height: 300px; object-fit: cover; border-radius: 10px; margin-top: 20px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Форма обратной связи -->
+    <section class="section">
+        <div class="container">
+            <div style="max-width: 800px; margin: 0 auto;">
+                <h2 class="text-center">Быстрая форма обратной связи</h2>
+                <p style="text-align: center; margin-bottom: 40px; color: var(--text-secondary);">Заполните форму и мы свяжемся с вами в ближайшее время</p>
+                
+                <form id="contactFormPage">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                        <div class="form-group">
+                            <label for="contactNamePage">Ваше имя *</label>
+                            <input type="text" id="contactNamePage" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactPhonePage">Ваш телефон *</label>
+                            <input type="tel" id="contactPhonePage" name="phone" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contactEmailPage">Ваш email</label>
+                        <input type="email" id="contactEmailPage" name="email">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contactCompanyPage">Название компании</label>
+                        <input type="text" id="contactCompanyPage" name="company">
+                    </div>
+                    
+<div class="form-group">
+  <label for="contactServicePage">Интересующая услуга</label>
+
+  <!-- Нативный select оставляем для отправки (скрыт) -->
+  <select id="contactServicePage" name="service" class="visually-hidden">
+    <option value="">Выберите услугу</option>
+    <option value="kondicionirovanie">Кондиционирование</option>
+    <option value="ventilyaciya">Вентиляция и дымоудаление</option>
+    <option value="avtomatizaciya">Автоматизация систем</option>
+    <option value="almaznoe-burenie">Алмазное бурение</option>
+    <option value="vozdukhody">Изготовление воздуховодов</option>
+    <option value="project">Проектирование</option>
+    <option value="service">Обслуживание</option>
+    <option value="drugoe">Другое</option>
+  </select>
+
+  <!-- Кастомный стеклянный селект -->
+  <div class="glass-select" data-target="contactServicePage" role="combobox" aria-expanded="false" aria-haspopup="listbox">
+    <button type="button" class="glass-select__button">Выберите услугу</button>
+    <ul class="glass-select__list" role="listbox">
+      <li class="glass-select__option" data-value="">Выберите услугу</li>
+      <li class="glass-select__option" data-value="kondicionirovanie">Кондиционирование</li>
+      <li class="glass-select__option" data-value="ventilyaciya">Вентиляция и дымоудаление</li>
+      <li class="glass-select__option" data-value="avtomatizaciya">Автоматизация систем</li>
+      <li class="glass-select__option" data-value="almaznoe-burenie">Алмазное бурение</li>
+      <li class="glass-select__option" data-value="vozdukhody">Изготовление воздуховодов</li>
+      <li class="glass-select__option" data-value="project">Проектирование</li>
+      <li class="glass-select__option" data-value="service">Обслуживание</li>
+      <li class="glass-select__option" data-value="drugoe">Другое</li>
+    </ul>
+  </div>
+</div>
+                    
+                    <div class="form-group">
+                        <label for="contactMessagePage">Сообщение</label>
+                        <textarea id="contactMessagePage" name="message" rows="5" placeholder="Опишите вашу задачу или задайте вопрос..."></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label style="display: flex; align-items: center; cursor: pointer;">
+                            <input type="checkbox" name="agreement" required style="margin-right: 10px;">
+                            <span>Я согласен на обработку персональных данных</span>
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn" style="width: 100%;">Отправить сообщение</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- Свяжитесь с инженером -->
+    <section class="section">
+        <div class="container">
+            <h2 class="text-center">Свяжитесь с инженером в мессенджере</h2>
+            <div class="messengers">
+                <a href="https://wa.me/79133820775" class="messenger-btn" target="_blank">
+                    <img src="images/whatsapp.png" alt="WhatsApp">
+                    WhatsApp
+                </a>
+                <a href="https://t.me/79133820775" class="messenger-btn" target="_blank">
+                    <img src="images/telegram.png" alt="Telegram">
+                    Telegram
+                </a>
+                <a href="#" class="messenger-btn" onclick="showNotification('MAX messenger будет доступен скоро')">
+                    <img src="images/max.png" alt="MAX">
+                    MAX
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Режим работы -->
+    <section class="section">
+        <div class="container">
+            <h2 class="text-center">Режим работы</h2>
+            <div style="max-width: 600px; margin: 0 auto; background-color: rgba(255, 255, 255, 0.1); border-radius: 10px; padding: 30px;">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px;">
+                    <div>
+                        <h4 style="color: var(--accent-color); margin-bottom: 10px;">Офис в Барнауле</h4>
+                        <p>Пн-Пт: 9:00 - 18:00</p>
+                        <p>Сб, Вс: выходной</p>
+                    </div>
+                    <div>
+                        <h4 style="color: var(--accent-color); margin-bottom: 10px;">Офис в Новосибирске</h4>
+                        <p>Пн-Пт: 9:00 - 18:00</p>
+                        <p>Сб, Вс: выходной</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+  <!-- ТОЛЬКО кнопки мессенджеров имеют свои стили -->
+<style>
+  .vkv-msg-grid{display:grid;gap:8px}
+  .vkv-msg-btn{
+    display:inline-flex;align-items:center;gap:10px;
+    padding:8px 12px;height:40px;border-radius:999px;
+    text-decoration:none;color:inherit;background:transparent;
+    border:1px solid currentColor
+  }
+  .vkv-msg-ico{width:20px;height:20px;display:block}
+  .vkv-msg-btn:focus-visible{outline:2px solid currentColor;outline-offset:2px;border-radius:12px}
+  .vkv-msg-btn:hover{filter:brightness(0.96)}
+  @media (prefers-reduced-motion:no-preference){
+    .vkv-msg-btn{transition:filter .2s ease}
+  }
+</style>
+
+<!-- Подвал сайта -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>О компании</h3>
+        <p>ООО "МДН Инжиниринг" - профессиональные решения в сфере кондиционирования, вентиляции и автоматизации инженерных систем.</p>
+        <p>ИНН: 2222904674</p>
+        <p>ОГРН: 1232200018522</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="kondicionirovanie.html">Кондиционирование</a></li>
+          <li><a href="ventilyaciya.html">Вентиляция и дымоудаление</a></li>
+          <li><a href="avtomatizaciya.html">Автоматизация систем</a></li>
+          <li><a href="almaznoe-burenie.html">Алмазное бурение</a></li>
+          <li><a href="izgotovlenie-vozduhovodov.html">Изготовление воздуховодов</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Контакты</h3>
+        <ul>
+          <li><strong>Барнаул:</strong> <br>ул. Взлетная 2К, пом. Н1</li>
+          <li><strong>Новосибирск:</strong> <br>ул. Аэропорт 2Б, оф.46</li>
+          <li><a href="tel:+79130039534">+7 (913) 003-95-34</a></li>
+          <li><a href="mailto:info@mdn-eng.ru">info@mdn-eng.ru</a></li>
+          <li><a href="mailto:gendirector@mdn-eng.ru">gendirector@mdn-eng.ru</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Мы в социальных сетях</h3>
+        <div class="vkv-msg-grid">
+          <a href="https://wa.me/79133820775" class="vkv-msg-btn" target="_blank" rel="noopener">
+            <img src="images/whatsapp.png" alt="WhatsApp" class="vkv-msg-ico"> WhatsApp
+          </a>
+          <a href="https://t.me/79133820775" class="vkv-msg-btn" target="_blank" rel="noopener">
+            <img src="images/telegram.png" alt="Telegram" class="vkv-msg-ico"> Telegram
+          </a>
+          <a href="#" class="vkv-msg-btn" onclick="showNotification('MAX messenger будет доступен скоро'); return false;">
+            <img src="images/max.png" alt="MAX" class="vkv-msg-ico"> MAX
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
+        <span style="display: flex; align-items: center; gap: 10px;">
+          <img src="images/logo.png" alt='ООО "МДН Инжиниринг"' style="height: 40px; width: auto;">
+          <span>© 2025 ООО "МДН Инжиниринг". Все права защищены.</span>
+        </span>
+        <span style="display: flex; align-items: center; gap: 10px;">
+          <span>Сайт создан студией VKV — New Vision</span>
+          <a href="#"><img src="images/VKV-new_vision.png" alt="VKV — New Vision" style="height: 40px; width: auto;"></a>
+        </span>
+      </p>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- Модальное окно обратного звонка -->
+    <div id="callbackModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">×</span>
+            <h2>Мы вам перезвоним в течение 10 минут</h2>
+            <form id="callbackForm">
+                <div class="form-group">
+                    <label for="callbackName">Ваше имя</label>
+                    <input type="text" id="callbackName" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="callbackPhone">Ваш телефон</label>
+                    <input type="tel" id="callbackPhone" name="phone" required>
+                </div>
+                <button type="submit" class="btn">Заказать звонок</button>
+            </form>
+        </div>
+    </div>
+   <script>
+        // --- JavaScript для интерактивной анимации нового Hero блока ---
+        const heroSection = document.querySelector('.hero-glassmorphism');
+        const card = document.getElementById('glass-effect-card');
+
+        if (heroSection && card) {
+            const maxTilt = 8; // Уменьшил угол для более сдержанного эффекта
+
+            heroSection.addEventListener('mousemove', (e) => {
+                const centerX = heroSection.offsetWidth / 2;
+                const centerY = heroSection.offsetHeight / 2;
+                
+                const mouseX = e.clientX - heroSection.getBoundingClientRect().left - centerX;
+                const mouseY = e.clientY - heroSection.getBoundingClientRect().top - centerY;
+                
+                const rotateY = (mouseX / centerX) * maxTilt;
+                const rotateX = -(mouseY / centerY) * maxTilt;
+
+                card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+            });
+
+            heroSection.addEventListener('mouseleave', () => {
+                card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0)';
+            });
+        }
+    </script>
+
+
+<script>
+(function(){
+  function initGlassSelect(root){
+    const selectId = root.dataset.target;
+    const native = document.getElementById(selectId);
+    const btn = root.querySelector('.glass-select__button');
+    const list = root.querySelector('.glass-select__list');
+    const options = [...root.querySelectorAll('.glass-select__option')];
+
+    function open(){ list.classList.add('is-open'); root.setAttribute('aria-expanded','true'); }
+    function close(){ list.classList.remove('is-open'); root.setAttribute('aria-expanded','false'); }
+
+    btn.addEventListener('click', e=>{
+      e.stopPropagation();
+      list.classList.contains('is-open') ? close() : open();
+    });
+
+    options.forEach(opt=>{
+      opt.addEventListener('click', e=>{
+        const val = opt.dataset.value ?? '';
+        const text = opt.textContent.trim();
+        options.forEach(o=>o.classList.remove('is-selected'));
+        opt.classList.add('is-selected');
+        btn.textContent = text;
+        native.value = val;           // синхроним с реальным select
+        native.dispatchEvent(new Event('change', {bubbles:true}));
+        close();
+      });
+    });
+
+    // Клик вне списка — закрыть
+    document.addEventListener('click', e=>{
+      if(!root.contains(e.target)) close();
+    });
+
+    // ESC
+    root.addEventListener('keydown', e=>{
+      if(e.key === 'Escape') close();
+    });
+
+    // Инициализация по текущему значению select
+    const current = native.value;
+    const initOpt = options.find(o => (o.dataset.value ?? '') === current) || options[0];
+    initOpt.click();
+  }
+
+  document.querySelectorAll('.glass-select').forEach(initGlassSelect);
+})();
+</script>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+  <!-- Подвал сайта -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>О компании</h3>
+                    <p>ООО "МДН Инжиниринг" - профессиональные решения в сфере кондиционирования, вентиляции и автоматизации инженерных систем.</p>
+                    <p>ИНН: 2222904674</p>
+                    <p>ОГРН: 1232200018522</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Услуги</h3>
+                    <ul>
+                        <li><a href="kondicionirovanie.html">Кондиционирование</a></li>
+                        <li><a href="ventilyaciya.html">Вентиляция и дымоудаление</a></li>
+                        <li><a href="avtomatizaciya.html">Автоматизация систем</a></li>
+                        <li><a href="almaznoe-burenie.html">Алмазное бурение</a></li>
+                        <li><a href="izgotovlenie-vozduhovodov.html">Изготовление воздуховодов</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <ul>
+                        <li><strong>Барнаул:</strong> ул. Взлетная 2К, пом. Н1</li>
+                        <li><strong>Новосибирск:</strong> ул. Аэропорт 2Б, оф.46</li>
+                        <li><a href="tel:+79628203733">+7 (962) 820-37-33</a></li>
+                        <li><a href="mailto:mdnengineering@mail.ru">mdnengineering@mail.ru</a></li>
+                        <li><a href="mailto:gendirector@mdn-eng.ru">gendirector@mdn-eng.ru</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Мы в социальных сетях</h3>
+                    <div class="messengers">
+                        <a href="https://wa.me/79133820775" class="messenger-btn" target="_blank">
+                            <img src="images/whatsapp.svg" alt="WhatsApp">
+                            WhatsApp
+                        </a>
+                        <a href="https://t.me/79133820775" class="messenger-btn" target="_blank">
+                            <img src="images/telegram.svg" alt="Telegram">
+                            Telegram
+                        </a>
+                        <a href="#" class="messenger-btn" onclick="showNotification('MAX messenger будет доступен скоро')">
+                            <img src="images/max.svg" alt="MAX">
+                            MAX
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ООО "МДН Инжиниринг". Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальное окно обратного звонка -->
+    <div id="callbackModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2>Мы вам перезвоним в течение 3-х минут</h2>
+            <form id="callbackForm">
+                <div class="form-group">
+                    <label for="callbackName">Ваше имя</label>
+                    <input type="text" id="callbackName" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="callbackPhone">Ваш телефон</label>
+                    <input type="tel" id="callbackPhone" name="phone" required>
+                </div>
+                <button type="submit" class="btn">Заказать звонок</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

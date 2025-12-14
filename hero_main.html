@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Комплексные инженерные решения</title>
+    <style>
+        /* --- Общие стили и фон --- */
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            height: 100vh;
+            /* Указываем путь к вашему чертежу как к фону */
+            background-image: url('main_hero.png'); 
+            background-size: cover;
+            background-position: center;
+            
+            /* Центрируем стеклянную плитку */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden; /* Убираем прокрутку */
+        }
+
+        /* --- Стили для стеклянной плитки --- */
+        .glass-container {
+            width: 90%;
+            max-width: 650px;
+            padding: 40px;
+            box-sizing: border-box;
+            
+            /* Эффект "матового стекла" */
+            background: rgba(35, 35, 45, 0.1); /* Полупрозрачный фон */
+            backdrop-filter: blur(15px); /* Размытие фона под плиткой */
+            -webkit-backdrop-filter: blur(15px); /* Для поддержки Safari */
+            
+            /* Рамка и тень для объема */
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+
+            /* Стили текста */
+            color: #ffffff;
+            text-align: center;
+
+            /* Плавность для анимации */
+            transition: transform 0.1s ease-out;
+        }
+        
+        /* --- Заголовок H1 --- */
+        h1 {
+            font-size: 2.2rem;
+            margin-top: 0;
+            margin-bottom: 15px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+
+        /* --- Подзаголовок --- */
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        /* --- Кнопка CTA --- */
+        /* --- Кнопка CTA (Альтернативная версия) --- */
+/* --- Кнопка CTA (Улучшенная версия) --- */
+.cta-button {
+    background-color: rgba(255, 255, 255, 0.2); /* Полупрозрачный белый */
+    color: white;
+    padding: 15px 30px;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Тонкая светлая рамка */
+    border-radius: 50px; /* Полностью скругленные края, как в iOS */
+    font-size: 1rem;
+    font-weight: 500; /* Средняя жирность, более типичная для iOS */
+    cursor: pointer;
+    backdrop-filter: blur(5px); /* Легкое размытие и для самой кнопки */
+    -webkit-backdrop-filter: blur(5px);
+
+    /* САМОЕ ВАЖНОЕ: плавная анимация для всех изменений */
+    transition: transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94), background-color 0.2s ease;
+}
+
+/* Эффект при наведении курсора */
+.cta-button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: scale(1.03); /* Легкое увеличение */
+}
+
+/* АНИМАЦИЯ НАЖАТИЯ, как в iOS */
+.cta-button:active {
+    transform: scale(0.96); /* Кнопка "вдавливается" */
+    background-color: rgba(255, 255, 255, 0.15);
+}    </style>
+</head>
+<body>
+
+    <div class="glass-container" id="glass-effect-card">
+        <h1>Комплексные решения в кондиционировании, вентиляции и автоматизации</h1>
+        <p>Профессиональный подход к созданию комфортного микроклимата и автоматизации инженерных систем для вашего бизнеса и дома</p>
+        <button class="cta-button">Связаться с инженером</button>
+    </div>
+
+    <script>
+        // --- JavaScript для интерактивной анимации ---
+        const card = document.getElementById('glass-effect-card');
+
+        // Максимальный угол наклона карточки
+        const maxTilt = 10; 
+
+        document.body.addEventListener('mousemove', (e) => {
+            const centerX = window.innerWidth / 2;
+            const centerY = window.innerHeight / 2;
+
+            // Координаты курсора относительно центра экрана
+            const mouseX = e.clientX - centerX;
+            const mouseY = e.clientY - centerY;
+            
+            // Рассчитываем наклон по осям X и Y
+            // Чем дальше курсор от центра, тем больше наклон
+            const rotateY = (mouseX / centerX) * maxTilt;
+            const rotateX = -(mouseY / centerY) * maxTilt;
+
+            // Применяем трансформацию к карточке для создания 3D-эффекта
+            card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+        });
+
+        // Сбрасываем анимацию, когда курсор уходит с экрана
+        document.body.addEventListener('mouseleave', () => {
+            card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0)';
+        });
+    </script>
+
+</body>
+</html>
